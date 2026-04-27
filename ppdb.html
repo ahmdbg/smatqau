@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="SMATQ ABI UMMI adalah pesantren modern berbasis tahfidz Al-Qur'an yang berlokasi di Ampel, Boyolali. Kami mengintegrasikan pendidikan akademik berkualitas dengan program tahfidz intensif untuk mencetak generasi Qur'ani, berprestasi, dan berwawasan global. Temukan informasi lengkap tentang visi, misi, kurikulum, fasilitas, dan prestasi kami di sini.">
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
+    <title>Pendaftaran Santri Baru | SMATQ ABI UMMI</title>
+    <!-- Tailwind + Lucide + AOS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+            background: #eaeaea;
+        }
+
+        .step-indicator {
+            transition: all 0.2s ease;
+        }
+
+        .form-step {
+            display: none;
+            animation: fadeStep 0.3s ease;
+        }
+
+        .form-step.active-step {
+            display: block;
+        }
+
+        @keyframes fadeStep {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .input-focus:focus {
+            box-shadow: 0 0 0 3px rgba(0, 72, 148, 0.2);
+            border-color: #004894;
+            outline: none;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#004894',
+                        accent: '#cb9b2f',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans antialiased">
+
+    <!-- Header dengan navigasi -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm"
+        data-aos="fade-down" data-aos-duration="800">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8">
+            <div class="flex justify-between items-center h-16 lg:h-18">
+                <a href="index.html" class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 bg-primary rounded-xl flex items-center justify-center shadow-sm">
+                        <span class="text-white font-bold text-base"><img src="./img/logo.jpg" alt="logo"></span>
+                    </div>
+                    <span class="font-bold text-gray-800 tracking-tight text-lg hidden sm:inline">SMATQ<span
+                            class="text-primary"> ABI UMMI</span></span>
+                </a>
+                <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+                    <a href="index.html#about" class="hover:text-primary transition">Tentang</a>
+                    <a href="index.html#programs" class="hover:text-primary transition">Program</a>
+                    <a href="index.html#advantages" class="hover:text-primary transition">Keunggulan</a>
+                    <a href="kontak.html" class="hover:text-primary transition">Kontak</a>
+                </nav>
+                <div class="flex items-center gap-3">
+                    <a href="index.html"
+                        class="hidden sm:inline-block border border-primary text-primary hover:bg-primary/5 font-semibold text-sm py-2 px-5 rounded-full transition shadow-sm">←
+                        Kembali</a>
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-full hover:bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden py-3 border-t border-gray-100 flex flex-col gap-2 pb-4">
+                <a href="index.html#about" class="py-2 px-2 hover:bg-gray-50 rounded-lg">Tentang</a>
+                <a href="index.html#programs" class="py-2 px-2 hover:bg-gray-50 rounded-lg">Program</a>
+                <a href="index.html#advantages" class="py-2 px-2 hover:bg-gray-50 rounded-lg">Keunggulan</a>
+                <a href="kontak.html" class="py-2 px-2 hover:bg-gray-50 rounded-lg">Kontak</a>
+                <a href="index.html" class="mt-2 bg-primary text-white text-center rounded-full py-2">Kembali ke
+                    Beranda</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section Pendaftaran -->
+        <section
+            class="relative overflow-hidden bg-gradient-to-br from-white via-sky-50/20 to-blue-50/30 py-12 md:py-16"
+            data-aos="fade-up" data-aos-duration="1000">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8">
+                <div class="text-center">
+                    <span
+                        class="inline-flex items-center gap-2 bg-primary/10 px-4 py-1.5 rounded-full text-sm font-semibold text-primary"
+                        data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+                        <i data-lucide="clipboard-list" class="w-4 h-4"></i>PPDB 2025/2026
+                    </span>
+                    <h1 class="text-3xl md:text-5xl font-bold mt-4 text-gray-900" data-aos="fade-up"
+                        data-aos-duration="800" data-aos-delay="200">
+                        Formulir Pendaftaran <span class="text-primary">Santri Baru</span>
+                    </h1>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-4" data-aos="fade-up" data-aos-duration="800"
+                        data-aos-delay="300">
+                        Isi data diri dengan lengkap. Tim kami akan menghubungi Anda untuk verifikasi dan jadwal tes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Multi-step Form Section -->
+        <section class="py-12 md:py-16">
+            <div class="max-w-4xl mx-auto px-5">
+                <!-- Step progress indicators (2 langkah) -->
+                <div class="flex justify-between items-center mb-10" data-aos="fade-up" data-aos-duration="800"
+                    data-aos-delay="0">
+                    <div class="flex flex-col items-center flex-1">
+                        <div id="step1Indicator"
+                            class="step-indicator w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold shadow-md">
+                            1</div>
+                        <span class="text-xs mt-2 font-medium text-primary">Data Diri & Akademik</span>
+                    </div>
+                    <div class="flex-1 h-0.5 bg-gray-200 mx-2 relative">
+                        <div id="step1Line" class="w-0 h-full bg-primary transition-all duration-300"></div>
+                    </div>
+                    <div class="flex flex-col items-center flex-1">
+                        <div id="step2Indicator"
+                            class="step-indicator w-10 h-10 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center font-bold">
+                            2</div>
+                        <span class="text-xs mt-2 text-gray-500">Konfirmasi & Kirim</span>
+                    </div>
+                </div>
+
+                <!-- Form Steps -->
+                <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 md:p-8" data-aos="fade-up"
+                    data-aos-duration="800" data-aos-delay="100">
+                    <!-- Step 1: Data diri & akademik -->
+                    <div id="step1" class="form-step active-step">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6">🧑‍🎓 Data Calon Santri</h2>
+                        <div class="grid md:grid-cols-2 gap-5">
+                            <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="0">
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Nama Lengkap <span
+                                        class="text-red-500">*</span></label>
+                                <input type="text" id="fullName" placeholder="Contoh: Ahmad Fathan"
+                                    class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus">
+                            </div>
+                            <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="50">
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Nama Panggilan</label>
+                                <input type="text" id="nickname" placeholder="Contoh: Fathan"
+                                    class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus">
+                            </div>
+                            <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Tempat Lahir <span
+                                        class="text-red-500">*</span></label>
+                                <input type="text" id="birthPlace" placeholder="Kota"
+                                    class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus">
+                            </div>
+                            <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="150">
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Tanggal Lahir <span
+                                        class="text-red-500">*</span></label>
+                                <input type="date" id="birthDate"
+                                    class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus">
+                            </div>
+                            <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Jenis Kelamin <span
+                                        class="text-red-500">*</span></label>
+                                <select id="gender"
+                                    class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus">
+                                    <option value="">Pilih</option>
+                                    <option value="Laki-laki">Laki-laki</option>
+                                    <option value="Perempuan">Perempuan</option>
+                                </select>
+                            </div>
+                            <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="250">
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Asal Sekolah (SMP/MTs)
+                                    <span class="text-red-500">*</span></label>
+                                <input type="text" id="schoolOrigin" placeholder="Nama sekolah"
+                                    class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus">
+                            </div>
+                            <div class="md:col-span-2" data-aos="fade-right" data-aos-duration="500"
+                                data-aos-delay="300">
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Alamat Lengkap <span
+                                        class="text-red-500">*</span></label>
+                                <textarea id="address" rows="2" placeholder="Alamat rumah sesuai KTP"
+                                    class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus"></textarea>
+                            </div>
+                            <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="350">
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">No. WhatsApp (Aktif) <span
+                                        class="text-red-500">*</span></label>
+                                <input type="tel" id="phone" placeholder="08xxxxxxxxxx"
+                                    class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus">
+                            </div>
+                            <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Email (opsional)</label>
+                                <input type="email" id="email" placeholder="contoh@email.com"
+                                    class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus">
+                            </div>
+                        </div>
+
+                        <div class="mt-8 border-t pt-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">📚 Informasi Akademik & Tahfidz</h3>
+                            <div class="grid md:grid-cols-2 gap-5">
+                                <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="0">
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Rata-rata Raport
+                                        (SMP/MTs) <span class="text-red-500">*</span></label>
+                                    <input type="text" id="avgGrade" placeholder="Contoh: 85.5"
+                                        class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus">
+                                </div>
+                                <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Apakah sudah memiliki
+                                        hafalan Qur'an?</label>
+                                    <select id="hasHafalan"
+                                        class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus">
+                                        <option value="Belum">Belum</option>
+                                        <option value="1-3 Juz">1-3 Juz</option>
+                                        <option value="4-7 Juz">4-7 Juz</option>
+                                        <option value="8-15 Juz">8-15 Juz</option>
+                                        <option value=">15 Juz">>15 Juz</option>
+                                    </select>
+                                </div>
+                                <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Kemampuan membaca
+                                        Al-Qur'an</label>
+                                    <select id="quranAbility"
+                                        class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus">
+                                        <option value="Baik (Tajwid lancar)">Baik (Tajwid lancar)</option>
+                                        <option value="Cukup (perlu bimbingan)">Cukup (perlu bimbingan)</option>
+                                        <option value="Masih belajar iqro">Masih belajar iqro</option>
+                                    </select>
+                                </div>
+                                <div class="md:col-span-2" data-aos="fade-right" data-aos-duration="500"
+                                    data-aos-delay="300">
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Prestasi yang pernah
+                                        diraih (akademik/non-akademik)</label>
+                                    <textarea id="achievement" rows="2" placeholder="Juara OSN, Tahfidz, Pidato, dsb"
+                                        class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end mt-8">
+                            <button id="nextStep1"
+                                class="bg-primary hover:bg-primary/90 text-white font-bold px-8 py-2.5 rounded-xl transition flex items-center gap-2">
+                                Selanjutnya <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Konfirmasi & Kirim via WhatsApp -->
+                    <div id="step2" class="form-step">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6">✅ Konfirmasi Data & Kirim Pendaftaran</h2>
+                        <div class="bg-blue-50 p-5 rounded-xl border border-blue-100 mb-6">
+                            <p class="font-semibold mb-2">Sebelum mengirim, pastikan data yang diisi sudah benar:</p>
+                            <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                                <li>Data diri sesuai identitas resmi</li>
+                                <li>Nomor WhatsApp aktif untuk dihubungi panitia</li>
+                                <li>Program unggulan sesuai minat</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-start gap-3 bg-green-50 p-4 rounded-xl border border-green-100 mb-6">
+                            <i data-lucide="message-circle" class="w-6 h-6 text-green-700 shrink-0 mt-0.5"></i>
+                            <p class="text-sm text-gray-700">Dengan menekan tombol <strong>"Kirim Pendaftaran"</strong>,
+                                Anda akan diarahkan ke WhatsApp untuk mengirimkan data ke panitia. Tim kami akan segera
+                                memproses dan membalas dalam 1x24 jam.</p>
+                        </div>
+                        <div class="flex justify-between mt-8">
+                            <button id="prevStep2"
+                                class="border border-gray-300 hover:bg-gray-50 font-semibold px-6 py-2.5 rounded-xl transition flex items-center gap-2">
+                                <i data-lucide="arrow-left" class="w-5 h-5"></i> Sebelumnya
+                            </button>
+                            <button id="submitForm"
+                                class="bg-green-700 hover:bg-green-800 text-white font-bold px-8 py-2.5 rounded-xl transition flex items-center gap-2">
+                                <i data-lucide="send"></i> Kirim Pendaftaran
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Tambahan -->
+                <div class="mt-10 text-center text-sm text-gray-500 flex justify-center gap-6 flex-wrap"
+                    data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <span class="flex items-center gap-1"><i data-lucide="check-circle"
+                            class="w-4 h-4 text-primary"></i> Pendaftaran gratis</span>
+                    <span class="flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4 text-primary"></i>
+                        Pengumuman via WA</span>
+                    <span class="flex items-center gap-1"><i data-lucide="phone-call" class="w-4 h-4 text-primary"></i>
+                        Hotline +62 856-4005-4840</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action tambahan -->
+        <section class="py-12 border-t" data-aos="fade-up" data-aos-duration="800">
+            <div class="max-w-4xl mx-auto px-5 text-center bg-gray-50 p-8 rounded-xl shadow-sm">
+                <h3 class="text-xl font-bold">Butuh bantuan pengisian formulir?</h3>
+                <p class="text-gray-600 mt-2">Tim pendaftaran siap membantu via WhatsApp</p>
+                <a href="https://wa.me/6285640054840?text=Assalamu%27alaikum%2C%20saya%20membutuhkan%20bantuan%20pengisian%20formulir%20pendaftaran%20SMATQ%20ABI%20UMMI."
+                    target="_blank"
+                    class="inline-flex items-center gap-2 mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold transition"><i
+                        data-lucide="message-circle"></i> Chat Admin</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 text-gray-400 py-12" data-aos="fade-up" data-aos-duration="600">
+        <div class="max-w-7xl mx-auto px-5 text-center">
+            <div class="flex justify-center gap-6 flex-wrap mb-6">
+                <a href="index.html" class="hover:text-white">Beranda</a>
+                <a href="tentang.html" class="hover:text-white">Tentang Kami</a>
+                <a href="ppdb.html" class="hover:text-white">Pendaftaran</a>
+                <a href="kontak.html" class="hover:text-white">Kontak</a>
+            </div>
+            <p>© 2025 SMATQ ABI UMMI Islamic Boarding School · Dari Ampel untuk Dunia</p>
+            <p class="text-xs mt-2">Ampel, Boyolali, Jawa Tengah | +62 856-4005-4840</p>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Inisialisasi AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+        });
+
+        // Inisialisasi icon Lucide
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobBtn = document.getElementById('mobileMenuBtn');
+        const mobMenu = document.getElementById('mobileMenu');
+        if (mobBtn) mobBtn.onclick = () => mobMenu.classList.toggle('hidden');
+
+        // Multi-step logic (2 steps)
+        let currentStep = 1;
+        const step1Div = document.getElementById('step1');
+        const step2Div = document.getElementById('step2');
+        const step1Indicator = document.getElementById('step1Indicator');
+        const step2Indicator = document.getElementById('step2Indicator');
+        const step1Line = document.getElementById('step1Line');
+
+        function updateSteps(step) {
+            step1Div.classList.remove('active-step');
+            step2Div.classList.remove('active-step');
+            if (step === 1) {
+                step1Div.classList.add('active-step');
+                step1Indicator.classList.add('bg-primary', 'text-white');
+                step1Indicator.classList.remove('bg-gray-200', 'text-gray-500');
+                step2Indicator.classList.remove('bg-primary', 'text-white');
+                step2Indicator.classList.add('bg-gray-200', 'text-gray-500');
+                step1Line.classList.remove('w-full');
+            } else {
+                step2Div.classList.add('active-step');
+                step1Indicator.classList.add('bg-primary', 'text-white');
+                step2Indicator.classList.add('bg-primary', 'text-white');
+                step2Indicator.classList.remove('bg-gray-200', 'text-gray-500');
+                step1Line.classList.add('w-full');
+            }
+        }
+
+        // Validasi Step 1
+        function validateStep1() {
+            const name = document.getElementById('fullName').value.trim();
+            const birthPlace = document.getElementById('birthPlace').value.trim();
+            const birthDate = document.getElementById('birthDate').value;
+            const gender = document.getElementById('gender').value;
+            const school = document.getElementById('schoolOrigin').value.trim();
+            const address = document.getElementById('address').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const avgGrade = document.getElementById('avgGrade').value.trim();
+
+            if (!name) { alert("Nama lengkap wajib diisi."); return false; }
+            if (!birthPlace) { alert("Tempat lahir wajib diisi."); return false; }
+            if (!birthDate) { alert("Tanggal lahir wajib diisi."); return false; }
+            if (!gender) { alert("Jenis kelamin wajib dipilih."); return false; }
+            if (!school) { alert("Asal sekolah wajib diisi."); return false; }
+            if (!address) { alert("Alamat lengkap wajib diisi."); return false; }
+            if (!phone) { alert("Nomor WhatsApp wajib diisi."); return false; }
+            if (!avgGrade) { alert("Rata-rata raport wajib diisi."); return false; }
+
+            const phoneClean = phone.replace(/\s/g, '');
+            if (!/^[0-9+()-]+$/.test(phoneClean)) {
+                alert("Nomor WhatsApp tidak valid. Hanya boleh berisi angka, tanda +, atau spasi.");
+                return false;
+            }
+            return true;
+        }
+
+        // Event listener untuk tombol Selanjutnya
+        const nextBtn = document.getElementById('nextStep1');
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                if (validateStep1()) {
+                    currentStep = 2;
+                    updateSteps(2);
+                    lucide.createIcons();
+                }
+            });
+        }
+
+        // Tombol Sebelumnya di step 2
+        const prevBtn = document.getElementById('prevStep2');
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                currentStep = 1;
+                updateSteps(1);
+                lucide.createIcons();
+            });
+        }
+
+        // Submit form: kirim data ke WhatsApp
+        const submitBtn = document.getElementById('submitForm');
+        if (submitBtn) {
+            submitBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                const isValid = validateStep1();
+                if (!isValid) {
+                    alert("Mohon lengkapi data di step 1 terlebih dahulu.");
+                    currentStep = 1;
+                    updateSteps(1);
+                    return;
+                }
+
+                const fullNameVal = document.getElementById('fullName').value.trim();
+                const nicknameVal = document.getElementById('nickname').value.trim() || "-";
+                const birthPlaceVal = document.getElementById('birthPlace').value.trim();
+                const birthDateVal = document.getElementById('birthDate').value;
+                const genderVal = document.getElementById('gender').value;
+                const schoolVal = document.getElementById('schoolOrigin').value.trim();
+                const addressVal = document.getElementById('address').value.trim();
+                const phoneVal = document.getElementById('phone').value.trim();
+                const emailVal = document.getElementById('email').value.trim() || "-";
+                const avgGradeVal = document.getElementById('avgGrade').value.trim();
+                const hafalanVal = document.getElementById('hasHafalan').value;
+                const quranAbilityVal = document.getElementById('quranAbility').value;
+                const achievementVal = document.getElementById('achievement').value.trim() || "Tidak ada";
+
+                let message = `*PENDAFTARAN SANTRI BARU SMATQ ABI UMMI*%0A%0A` +
+                    `_Nama Lengkap:_ ${fullNameVal}%0A` +
+                    `_Nama Panggilan:_ ${nicknameVal}%0A` +
+                    `_Tempat, Tgl Lahir:_ ${birthPlaceVal}, ${birthDateVal}%0A` +
+                    `_Jenis Kelamin:_ ${genderVal}%0A` +
+                    `_Asal Sekolah:_ ${schoolVal}%0A` +
+                    `_Alamat:_ ${addressVal}%0A` +
+                    `_No WhatsApp:_ ${phoneVal}%0A` +
+                    `_Email:_ ${emailVal}%0A%0A` +
+                    `*Data Akademik & Tahfidz*%0A` +
+                    `_Rata-rata Raport:_ ${avgGradeVal}%0A` +
+                    `_Hafalan Al-Qur'an:_ ${hafalanVal}%0A` +
+                    `_Kemampuan Baca Qur'an:_ ${quranAbilityVal}%0A` +
+                    `_Prestasi:_ ${achievementVal}%0A%0A` +
+                    `_Hormat saya, ${fullNameVal}_`;
+
+                const waUrl = `https://wa.me/6285640054840?text=${message}`;
+                window.open(waUrl, '_blank');
+
+                alert("Pendaftaran siap! Anda akan diarahkan ke WhatsApp.\nSilakan kirim pesan tersebut ke admin untuk menyelesaikan pendaftaran.");
+            });
+        }
+
+        // Refresh AOS setelah multi-step berubah (opsional)
+        // AOS.refresh() dipanggil saat step berubah? tidak perlu karena step hanya toggle display, AOS tetap bekerja.
+        // Namun jika ada elemen baru, AOS tetap bisa di-refresh. Tapi tidak diperlukan karena tidak ada elemen baru yang ditambahkan secara dinamis.
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="SMATQ ABI UMMI adalah pesantren modern berbasis tahfidz Al-Qur'an yang berlokasi di Ampel, Boyolali. Kami mengintegrasikan pendidikan akademik berkualitas dengan program tahfidz intensif untuk mencetak generasi Qur'ani, berprestasi, dan berwawasan global. Temukan informasi lengkap tentang visi, misi, kurikulum, fasilitas, dan prestasi kami di sini.">
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
+    <title>Hubungi Kami | SMATQ ABI UMMI</title>
+    <!-- Tailwind + Lucide + AOS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+            background: #eaeaea;
+        }
+
+        .contact-card {
+            transition: all 0.2s ease;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#004894',
+                        accent: '#cb9b2f',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans antialiased">
+
+    <!-- Header dengan navigasi -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm"
+        data-aos="fade-down" data-aos-duration="800">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8">
+            <div class="flex justify-between items-center h-16 lg:h-18">
+                <a href="index.html" class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 bg-primary rounded-xl flex items-center justify-center shadow-sm">
+                        <span class="text-white font-bold text-base"><img src="./img/logo.jpg" alt="logo"></span>
+                    </div>
+                    <span class="font-bold text-gray-800 tracking-tight text-lg hidden sm:inline">SMATQ<span
+                            class="text-primary"> ABI UMMI</span></span>
+                </a>
+                <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+                    <a href="index.html" class="hover:text-primary transition">Beranda</a>
+                    <a href="tentang.html" class="hover:text-primary transition">Tentang</a>
+                    <a href="index.html#programs" class="hover:text-primary transition">Program</a>
+                    <a href="daftar.html" class="hover:text-primary transition">Pendaftaran</a>
+                    <a href="kontak.html" class="text-primary font-semibold border-b-2 border-primary pb-0.5">Kontak</a>
+                </nav>
+                <div class="flex items-center gap-3">
+                    <a href="daftar.html"
+                        class="hidden sm:inline-block bg-primary hover:bg-primary/90 text-white font-semibold text-sm py-2 px-5 rounded-full transition shadow-sm">Daftar
+                        Sekarang</a>
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-full hover:bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    <a href="kontak.html"
+                        class="hidden sm:inline-block bg-accent hover:bg-accent/90 text-white font-semibold text-sm py-2 px-5 rounded-full transition shadow-sm">Kontak</a>
+                    <button id="mobileMenuBtn2" class="md:hidden p-2 rounded-full hover:bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden py-3 border-t border-gray-100 flex flex-col gap-2 pb-4">
+                <a href="index.html" class="py-2 px-2 hover:bg-gray-50 rounded-lg">Beranda</a>
+                <a href="tentang.html" class="py-2 px-2 hover:bg-gray-50 rounded-lg">Tentang</a>
+                <a href="index.html#programs" class="py-2 px-2 hover:bg-gray-50 rounded-lg">Program</a>
+                <a href="daftar.html" class="py-2 px-2 hover:bg-gray-50 rounded-lg">Pendaftaran</a>
+                <a href="kontak.html" class="py-2 px-2 bg-gray-50 rounded-lg text-primary font-semibold">Kontak</a>
+                <a href="daftar.html" class="mt-2 bg-primary text-white text-center rounded-full py-2">Daftar
+                    Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section Kontak -->
+        <section class="relative bg-gradient-to-r from-primary to-sky-800 text-white py-16 md:py-20" data-aos="fade-up"
+            data-aos-duration="1000">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 text-center">
+                <span class="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-1 text-sm mb-4"
+                    data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">Hubungi Kami</span>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up" data-aos-duration="800"
+                    data-aos-delay="200">Kami Siap Membantu</h1>
+                <p class="text-xl max-w-2xl mx-auto text-white/90" data-aos="fade-up" data-aos-duration="800"
+                    data-aos-delay="300">Tim pendaftaran & layanan informasi siap merespon pertanyaan Anda</p>
+            </div>
+        </section>
+
+        <!-- Informasi Kontak Utama -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-gray-50 rounded-2xl p-6 text-center contact-card hover:shadow-md transition"
+                        data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
+                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="map-pin" class="w-7 h-7 text-primary"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Alamat</h3>
+                        <p class="text-gray-600 text-sm">Jl. Raya Ampel No. 123, Ampel, Kec. Ampel, Kab. Boyolali, Jawa
+                            Tengah 57352</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-6 text-center contact-card hover:shadow-md transition"
+                        data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="phone" class="w-7 h-7 text-primary"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Telepon & WhatsApp</h3>
+                        <p class="text-gray-600 text-sm">+62 856-4005-4840 (Admin)<br>+62 812-3456-7890 (Kantor)</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-6 text-center contact-card hover:shadow-md transition"
+                        data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="mail" class="w-7 h-7 text-primary"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Email</h3>
+                        <p class="text-gray-600 text-sm">info@smatqabiiummi.sch.id<br>ppdb@smatqabiiummi.sch.id</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-6 text-center contact-card hover:shadow-md transition"
+                        data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="clock" class="w-7 h-7 text-primary"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Jam Operasional</h3>
+                        <p class="text-gray-600 text-sm">Senin - Sabtu: 08.00 - 16.00 WIB<br>Minggu & Hari Libur: Tutup
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Peta Lokasi (embed Google Maps) -->
+        <section class="py-12 bg-gray-50" data-aos="fade-up" data-aos-duration="800">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8">
+                <div class="text-center mb-8" data-aos="fade-up" data-aos-duration="600">
+                    <h2 class="text-3xl font-bold text-gray-800">Lokasi Kami</h2>
+                    <div class="h-1 w-20 bg-primary mx-auto mt-2 rounded-full"></div>
+                    <p class="text-gray-600 mt-3">Mudah diakses dari jalan raya Boyolali - Ampel</p>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-200" data-aos="zoom-in"
+                    data-aos-duration="800" data-aos-delay="100">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.954649436617!2d110.55941467400399!3d-7.4702603925414035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a6fce68241dd9%3A0xbee67409fa88e874!2sPPTQ%20Abi-Ummi!5e0!3m2!1sen!2sid!4v1777135683368!5m2!1sen!2sid"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Kontak & Sosial Media -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 grid md:grid-cols-2 gap-12">
+                <!-- Form Kirim Pesan via WhatsApp -->
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-sm" data-aos="fade-right" data-aos-duration="800">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">📩 Kirim Pesan Langsung</h3>
+                    <p class="text-gray-600 mb-6">Isi form di bawah, pesan akan dikirim ke WhatsApp kami.</p>
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Nama Lengkap <span
+                                    class="text-red-500">*</span></label>
+                            <input type="text" id="contactName"
+                                class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus"
+                                placeholder="Nama Anda">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">No. WhatsApp <span
+                                    class="text-red-500">*</span></label>
+                            <input type="tel" id="contactPhone"
+                                class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus"
+                                placeholder="08123456789">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Perihal</label>
+                            <select id="contactSubject"
+                                class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus">
+                                <option value="Informasi Pendaftaran">Informasi Pendaftaran</option>
+                                <option value="Pertanyaan Umum">Pertanyaan Umum</option>
+                                <option value="Kerjasama">Kerjasama & Donasi</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Pesan <span
+                                    class="text-red-500">*</span></label>
+                            <textarea id="contactMessage" rows="4"
+                                class="w-full border border-gray-300 rounded-xl px-4 py-2.5 input-focus"
+                                placeholder="Tulis pertanyaan atau pesan Anda..."></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl transition flex items-center justify-center gap-2">
+                            <i data-lucide="message-circle"></i> Kirim via WhatsApp
+                        </button>
+                        <p id="formConfirm" class="text-sm text-center text-green-600 mt-3 hidden"></p>
+                    </form>
+                </div>
+
+                <!-- Informasi Tambahan & Sosial Media -->
+                <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">📱 Ikuti Kami</h3>
+                    <p class="text-gray-600 mb-6">Dapatkan update terbaru seputar kegiatan, prestasi, dan jadwal PPDB
+                        melalui media sosial kami.</p>
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <a href="https://instagram.com/smatqabiummi" target="_blank"
+                            class="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-3 transition flex items-center gap-2"
+                            data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0"><i data-lucide="instagram"
+                                class="w-5 h-5"></i> <span class="text-sm font-semibold">Instagram</span></a>
+                        <a href="https://facebook.com/SMATQAbiUmmi1" target="_blank"
+                            class="bg-blue-500 hover:bg-blue-600 text-white rounded-full p-3 transition flex items-center gap-2"
+                            data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100"><i data-lucide="facebook"
+                                class="w-5 h-5"></i> <span class="text-sm font-semibold">Facebook</span></a>
+                        <a href="https://wa.me/6285640054840" target="_blank"
+                            class="bg-green-500 hover:bg-green-600 text-white rounded-full p-3 transition flex items-center gap-2"
+                            data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200"><i
+                                data-lucide="message-circle" class="w-5 h-5"></i> <span
+                                class="text-sm font-semibold">WhatsApp</span></a>
+                        <a href="https://youtube.com/@PPTQABI-UMMIAMPEL" target="_blank"
+                            class="bg-gray-700 hover:bg-gray-800 text-white rounded-full p-3 transition flex items-center gap-2"
+                            data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300"><i data-lucide="youtube"
+                                class="w-5 h-5"></i> <span class="text-sm font-semibold">YouTube</span></a>
+                    </div>
+
+                    <div class="bg-primary/5 rounded-2xl p-6 border border-primary/20" data-aos="flip-up"
+                        data-aos-duration="700" data-aos-delay="100">
+                        <h4 class="font-bold text-xl mb-3 flex items-center gap-2"><i data-lucide="phone-call"
+                                class="text-primary"></i> Hotline PPDB</h4>
+                        <p class="text-2xl font-bold text-primary mb-2">+62 856-4005-4840</p>
+                        <p class="text-sm text-gray-600">Layanan Senin - Sabtu, 08.00 - 16.00 WIB. Cepat tanggap!</p>
+                        <div class="mt-4 h-px bg-primary/20 my-4"></div>
+                        <p class="text-sm text-gray-600">Atau kunjungi langsung kantor kami di Jl. Raya Ampel, Boyolali.
+                            Kami dengan senang hati menyambut Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Singkat Seputar Kontak -->
+        <section class="py-12 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-5 text-center">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6" data-aos="fade-up" data-aos-duration="800">Pertanyaan
+                    yang Sering Diajukan</h2>
+                <div class="grid md:grid-cols-2 gap-6 text-left">
+                    <div class="bg-white p-5 rounded-xl shadow-sm" data-aos="fade-up" data-aos-duration="500"
+                        data-aos-delay="0">
+                        <p class="font-semibold flex items-center gap-2"><i data-lucide="help-circle"
+                                class="text-primary w-5 h-5"></i> Bagaimana cara mendaftar?</p>
+                        <p class="text-sm text-gray-600 mt-1">Kunjungi halaman <a href="daftar.html"
+                                class="text-primary font-semibold">Pendaftaran</a> atau hubungi WhatsApp kami.</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm" data-aos="fade-up" data-aos-duration="500"
+                        data-aos-delay="100">
+                        <p class="font-semibold flex items-center gap-2"><i data-lucide="help-circle"
+                                class="text-primary w-5 h-5"></i> Apakah ada biaya pendaftaran?</p>
+                        <p class="text-sm text-gray-600 mt-1">Pendaftaran GRATIS. Biaya pendidikan dapat ditanyakan
+                            melalui kontak resmi.</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm" data-aos="fade-up" data-aos-duration="500"
+                        data-aos-delay="200">
+                        <p class="font-semibold flex items-center gap-2"><i data-lucide="help-circle"
+                                class="text-primary w-5 h-5"></i> Kapan jadwal tes masuk?</p>
+                        <p class="text-sm text-gray-600 mt-1">Jadwal tes akan diinformasikan setelah pendaftaran. Pantau
+                            WhatsApp dan website.</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm" data-aos="fade-up" data-aos-duration="500"
+                        data-aos-delay="300">
+                        <p class="font-semibold flex items-center gap-2"><i data-lucide="help-circle"
+                                class="text-primary w-5 h-5"></i> Apakah ada beasiswa?</p>
+                        <p class="text-sm text-gray-600 mt-1">Ya, tersedia beasiswa prestasi tahfidz dan bantuan untuk
+                            santri kurang mampu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-16 bg-primary text-white" data-aos="fade-up" data-aos-duration="800">
+            <div class="max-w-4xl mx-auto px-5 text-center">
+                <i data-lucide="users" class="w-12 h-12 mx-auto mb-4 opacity-90" data-aos="zoom-in"
+                    data-aos-duration="600"></i>
+                <h2 class="text-2xl md:text-3xl font-bold" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="100">Siap Bergabung dengan Keluarga Besar SMATQ ABI UMMI?</h2>
+                <p class="mt-3 text-white/90" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Daftarkan
+                    diri Anda sekarang dan raih masa depan gemilang sebagai generasi
+                    Qur'ani.</p>
+                <div class="flex flex-wrap justify-center gap-4 mt-8" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="300">
+                    <a href="./ppdb.html"
+                        class="bg-accent hover:bg-accent/90 text-gray-900 font-bold px-8 py-3 rounded-full transition shadow-lg">Formulir
+                        Pendaftaran</a>
+                    <a href="https://wa.me/6285640054840" target="_blank"
+                        class="bg-white/20 hover:bg-white/30 px-8 py-3 rounded-full transition">Chat Admin</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 text-gray-400 py-12" data-aos="fade-up" data-aos-duration="600">
+        <div class="max-w-7xl mx-auto px-5 text-center">
+            <div class="flex justify-center gap-6 flex-wrap mb-6">
+                <a href="index.html" class="hover:text-white">Beranda</a>
+                <a href="tentang.html" class="hover:text-white">Tentang Kami</a>
+                <a href="ppdb.html" class="hover:text-white">Pendaftaran</a>
+                <a href="kontak.html" class="hover:text-white">Kontak</a>
+            </div>
+            <p>© 2025 SMATQ ABI UMMI Islamic Boarding School · Dari Ampel untuk Dunia</p>
+            <p class="text-xs mt-2">Ampel, Boyolali, Jawa Tengah | +62 856-4005-4840</p>
+        </div>
+    </footer>
+
+    <style>
+        .input-focus:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 72, 148, 0.2);
+            border-color: #004894;
+        }
+    </style>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Inisialisasi AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+        });
+
+        lucide.createIcons();
+
+        // Mobile menu toggle (dua tombol dengan ID berbeda)
+        const mobBtn = document.getElementById('mobileMenuBtn');
+        const mobBtn2 = document.getElementById('mobileMenuBtn2');
+        const mobMenu = document.getElementById('mobileMenu');
+        const toggleMenu = () => mobMenu.classList.toggle('hidden');
+        if (mobBtn) mobBtn.onclick = toggleMenu;
+        if (mobBtn2) mobBtn2.onclick = toggleMenu;
+
+        // Form WhatsApp submission
+        const form = document.getElementById('contactForm');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('contactName').value.trim();
+                const phone = document.getElementById('contactPhone').value.trim();
+                const subject = document.getElementById('contactSubject').value;
+                const message = document.getElementById('contactMessage').value.trim();
+
+                if (!name) { alert("Nama lengkap wajib diisi."); return; }
+                if (!phone) { alert("Nomor WhatsApp wajib diisi."); return; }
+                if (!message) { alert("Pesan tidak boleh kosong."); return; }
+
+                let waText = `*KONTAK DARI WEBSITE SMATQ ABI UMMI*%0A%0A`;
+                waText += `_Nama:_ ${encodeURIComponent(name)}%0A`;
+                waText += `_No WhatsApp:_ ${encodeURIComponent(phone)}%0A`;
+                waText += `_Perihal:_ ${encodeURIComponent(subject)}%0A%0A`;
+                waText += `*Pesan:*%0A${encodeURIComponent(message)}%0A%0A`;
+                waText += `_Dikirim dari halaman kontak website._`;
+
+                const waUrl = `https://wa.me/6285640054840?text=${waText}`;
+                window.open(waUrl, '_blank');
+
+                const confirmMsg = document.getElementById('formConfirm');
+                confirmMsg.innerText = "✓ Terkirim! Anda akan diarahkan ke WhatsApp. Silakan kirim pesan.";
+                confirmMsg.classList.remove('hidden');
+                setTimeout(() => confirmMsg.classList.add('hidden'), 5000);
+                form.reset();
+            });
+        }
+    </script>
+</body>
+
+</html>

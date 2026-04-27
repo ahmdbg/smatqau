@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="SMATQ ABI UMMI adalah pesantren modern berbasis tahfidz Al-Qur'an yang berlokasi di Ampel, Boyolali. Kami mengintegrasikan pendidikan akademik berkualitas dengan program tahfidz intensif untuk mencetak generasi Qur'ani, berprestasi, dan berwawasan global. Temukan informasi lengkap tentang visi, misi, kurikulum, fasilitas, dan prestasi kami di sini.">
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
+    <title>Tentang SMATQ ABI UMMI | Pesantren Modern Tahfidz & Akademik</title>
+    <!-- Tailwind + Lucide + AOS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+            background: #eaeaea;
+        }
+
+        .fade-up {
+            transition: all 0.4s ease;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#004894',
+                        accent: '#cb9b2f',
+                    },
+                    animation: {
+                        'float': 'float 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: { '0%, 100%': { transform: 'translateY(0px)' }, '50%': { transform: 'translateY(-8px)' } }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans antialiased">
+
+    <!-- Header dengan navigasi (sama dengan halaman utama) -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm"
+        data-aos="fade-down" data-aos-duration="800">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8">
+            <div class="flex justify-between items-center h-16 lg:h-18">
+                <a href="index.html" class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 bg-primary rounded-xl flex items-center justify-center shadow-sm">
+                        <span class="text-white font-bold text-base"><img src="./img/logo.jpg" alt="logo"></span>
+                    </div>
+                    <span class="font-bold text-gray-800 tracking-tight text-lg hidden sm:inline">SMATQ<span
+                            class="text-primary"> ABI UMMI</span></span>
+                </a>
+                <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+                    <a href="index.html#about" class="hover:text-primary transition">Beranda</a>
+                    <a href="tentang.html"
+                        class="text-primary font-semibold border-b-2 border-primary pb-0.5">Tentang</a>
+                    <a href="index.html#programs" class="hover:text-primary transition">Program</a>
+                    <a href="index.html#advantages" class="hover:text-primary transition">Keunggulan</a>
+                    <a href="daftar.html" class="hover:text-primary transition">Pendaftaran</a>
+                    <a href="kontak.html" class="hover:text-primary transition">Kontak</a>
+                </nav>
+                <div class="flex items-center gap-3">
+                    <a href="daftar.html"
+                        class="hidden sm:inline-block bg-primary hover:bg-primary/90 text-white font-semibold text-sm py-2 px-5 rounded-full transition shadow-sm">Daftar
+                        Sekarang</a>
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-full hover:bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden py-3 border-t border-gray-100 flex flex-col gap-2 pb-4">
+                <a href="index.html#about" class="py-2 px-2 hover:bg-gray-50 rounded-lg">Beranda</a>
+                <a href="tentang.html" class="py-2 px-2 bg-gray-50 rounded-lg text-primary font-semibold">Tentang</a>
+                <a href="index.html#programs" class="py-2 px-2 hover:bg-gray-50 rounded-lg">Program</a>
+                <a href="index.html#advantages" class="py-2 px-2 hover:bg-gray-50 rounded-lg">Keunggulan</a>
+                <a href="daftar.html" class="py-2 px-2 hover:bg-gray-50 rounded-lg">Pendaftaran</a>
+                <a href="kontak.html" class="py-2 px-2 hover:bg-gray-50 rounded-lg">Kontak</a>
+                <a href="daftar.html" class="mt-2 bg-primary text-white text-center rounded-full py-2">Daftar
+                    Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-r from-primary to-sky-800 text-white py-20 md:py-28" data-aos="fade-up"
+            data-aos-duration="1000">
+            <div class="absolute inset-0 bg-black/20"></div>
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 relative z-10 text-center">
+                <span class="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-1 text-sm mb-4"
+                    data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">Profil Lengkap</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6" data-aos="fade-up" data-aos-duration="800"
+                    data-aos-delay="200">SMATQ ABI UMMI<br><span class="text-accent">Islamic Boarding School</span></h1>
+                <p class="text-xl max-w-3xl mx-auto text-white/90" data-aos="fade-up" data-aos-duration="800"
+                    data-aos-delay="300">Mencetak Generasi Qur'ani, Berprestasi, dan Berwawasan Global</p>
+            </div>
+        </section>
+
+        <!-- Visi & Misi -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div class="bg-gray-50 rounded-2xl p-8 shadow-sm border-l-8 border-primary" data-aos="fade-right"
+                        data-aos-duration="800" data-aos-delay="0">
+                        <i data-lucide="eye" class="w-12 h-12 text-primary mb-4"></i>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Visi</h2>
+                        <p class="text-gray-700 text-lg leading-relaxed">Menjadi pusat pendidikan Islam unggulan yang
+                            melahirkan generasi <strong class="text-primary">hafidz Al-Qur'an, saintis, dan pemimpin
+                                masa depan</strong> yang berakhlak mulia, berwawasan global, serta berkontribusi bagi
+                            peradaban.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-8 shadow-sm border-r-8 border-primary" data-aos="fade-left"
+                        data-aos-duration="800" data-aos-delay="100">
+                        <i data-lucide="target" class="w-12 h-12 text-primary mb-4"></i>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Misi</h2>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Menyelenggarakan
+                                program tahfidz Al-Qur'an dengan metode mutqin dan target hafalan berkualitas.</li>
+                            <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Mengintegrasikan
+                                kurikulum nasional dengan pendidikan kepesantrenan dan life skills.</li>
+                            <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Membangun karakter
+                                santri yang mandiri, disiplin, berjiwa kepemimpinan, dan cinta tanah air.</li>
+                            <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Menyiapkan lulusan yang
+                                kompetitif di perguruan tinggi dalam dan luar negeri.</li>
+                            <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Mengembangkan budaya
+                                riset, inovasi, dan penguasaan bahasa asing (Arab & Inggris).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sejarah Singkat & Pendiri -->
+        <section class="py-16 bg-gradient-to-br from-blue-50 to-white">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8">
+                <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Sejarah & Perjalanan</h2>
+                    <div class="h-1 w-24 bg-primary mx-auto mt-4 rounded-full"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6 text-gray-700" data-aos="fade-right" data-aos-duration="800">
+                        <p class="text-lg leading-relaxed">SMATQ ABI UMMI berdiri pada <strong class="text-primary">31
+                                Januari 2014</strong> di bawah naungan Yayasan Abi Ummi. Berawal dari keprihatinan akan
+                            minimnya lembaga pendidikan menengah atas yang memadukan kurikulum akademik kuat dengan
+                            program tahfidz Al-Qur'an secara intensif dan pembinaan karakter Islami di lingkungan
+                            pesantren.</p>
+                        <p class="text-lg leading-relaxed">Dengan slogan <strong class="text-primary">“Dari Ampel untuk
+                                Dunia”</strong>, pesantren modern ini hadir di kawasan Ampel, Boyolali, Jawa Tengah,
+                            sebagai pusat pendidikan yang tidak hanya fokus pada hafalan Al-Qur'an, tetapi juga
+                            membekali santri dengan sains, teknologi, dan kemampuan bahasa asing.</p>
+                        <p class="text-lg leading-relaxed">Hingga saat ini SMATQ ABI UMMI telah meluluskan angkatan
+                            pertama dengan prestasi membanggakan, dimana lebih dari 90% santri diterima di PTN favorit
+                            seperti UGM, UIN, UI, dan beberapa di antaranya melanjutkan studi ke Timur Tengah dengan
+                            beasiswa.</p>
+                    </div>
+                    <div class="relative" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+                        <img src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                            alt="Gedung SMATQ ABI UMMI" class="rounded-2xl shadow-xl w-full object-cover h-80">
+                        <div
+                            class="absolute -bottom-5 -right-5 bg-primary text-white p-4 rounded-xl shadow-lg animate-float">
+                            <i data-lucide="calendar" class="w-8 h-8 inline mr-2"></i>
+                            <span class="font-bold">Sejak 2014</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kurikulum & Metode Pembelajaran -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8">
+                <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Kurikulum & Metode</h2>
+                    <div class="h-1 w-24 bg-primary mx-auto mt-4 rounded-full"></div>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Perpaduan unggulan antara Kurikulum Nasional,
+                        Tahfidz, dan Pendidikan Karakter Pesantren</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-md transition" data-aos="fade-up"
+                        data-aos-duration="600" data-aos-delay="0">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4"><i
+                                data-lucide="book-open" class="w-8 h-8 text-primary"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Kurikulum Akademik</h3>
+                        <p class="text-gray-600">Mengacu pada Kurikulum Merdeka dan Cambridge Assessment pathway untuk
+                            mata pelajaran MIPA, dengan penguatan Olimpiade Sains dan riset sederhana.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-md transition" data-aos="fade-up"
+                        data-aos-duration="600" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4"><i
+                                data-lucide="book-check" class="w-8 h-8 text-primary"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Program Tahfidz Mutqin</h3>
+                        <p class="text-gray-600">Metode Talaqqi, setoran harian, murajaah terjadwal, dan target minimal
+                            5 juz selama 3 tahun. Sertifikasi hafalan dari Lembaga Tahfidz Nasional.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-md transition" data-aos="fade-up"
+                        data-aos-duration="600" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4"><i
+                                data-lucide="users" class="w-8 h-8 text-primary"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Pendampingan Karakter & Leadership</h3>
+                        <p class="text-gray-600">Program pembinaan akhlak melalui kegiatan harian (shalat berjamaah,
+                            kajian kitab kuning), pelatihan public speaking, dan organisasi santri.</p>
+                    </div>
+                </div>
+                <div class="mt-12 bg-primary/5 rounded-2xl p-8 border border-primary/20" data-aos="fade-up"
+                    data-aos-duration="800" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold text-center mb-6">Metode Belajar Modern</h3>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 text-center">
+                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="0"><i data-lucide="monitor"
+                                class="w-10 h-10 text-primary mx-auto mb-2"></i>
+                            <p class="font-semibold">Smart Classroom</p>
+                            <p class="text-xs text-gray-500">Papan tulis interaktif & akses e-learning</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100"><i
+                                data-lucide="users-round" class="w-10 h-10 text-primary mx-auto mb-2"></i>
+                            <p class="font-semibold">Student-Centered</p>
+                            <p class="text-xs text-gray-500">Project based & diskusi aktif</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200"><i data-lucide="languages"
+                                class="w-10 h-10 text-primary mx-auto mb-2"></i>
+                            <p class="font-semibold">Full Immersion Bahasa</p>
+                            <p class="text-xs text-gray-500">English & Arabic Area</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300"><i data-lucide="plane"
+                                class="w-10 h-10 text-primary mx-auto mb-2"></i>
+                            <p class="font-semibold">Edu Trip & Outbound</p>
+                            <p class="text-xs text-gray-500">Belajar langsung dari alam & industri</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fasilitas Lengkap -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8">
+                <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Fasilitas Modern & Nyaman</h2>
+                    <div class="h-1 w-24 bg-primary mx-auto mt-4 rounded-full"></div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="flex gap-4 bg-white p-5 rounded-xl shadow-sm" data-aos="fade-up" data-aos-duration="500"
+                        data-aos-delay="0"><i data-lucide="home" class="w-8 h-8 text-primary shrink-0"></i>
+                        <div>
+                            <h3 class="font-bold">Asrama Putra & Putri</h3>
+                            <p class="text-sm text-gray-500">Kamar, fasilitas kamar mandi dalam, ruang belajar
+                                bersama, dan 24 jam pendampingan musyrif.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 bg-white p-5 rounded-xl shadow-sm" data-aos="fade-up" data-aos-duration="500"
+                        data-aos-delay="100"><i data-lucide="mosque" class="w-8 h-8 text-primary shrink-0"></i>
+                        <div>
+                            <h3 class="font-bold">Masjid Pondok</h3>
+                            <p class="text-sm text-gray-500">Kapasitas 1000 jamaah (dibagi menjadi 3 masjid), AC, sound system, kegiatan shalat
+                                berjamaah, kajian rutin.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 bg-white p-5 rounded-xl shadow-sm" data-aos="fade-up" data-aos-duration="500"
+                        data-aos-delay="200"><i data-lucide="book-copy" class="w-8 h-8 text-primary shrink-0"></i>
+                        <div>
+                            <h3 class="font-bold">Perpustakaan Digital</h3>
+                            <p class="text-sm text-gray-500">Koleksi lebih 3000 judul, akses e-book, jurnal, dan
+                                referensi tafsir & hadits.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 bg-white p-5 rounded-xl shadow-sm" data-aos="fade-up" data-aos-duration="500"
+                        data-aos-delay="300"><i data-lucide="flask-conical" class="w-8 h-8 text-primary shrink-0"></i>
+                        <div>
+                            <h3 class="font-bold">Laboratorium Sains</h3>
+                            <p class="text-sm text-gray-500">Lab Biologi, Kimia, Fisika lengkap dengan alat praktikum
+                                modern.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 bg-white p-5 rounded-xl shadow-sm" data-aos="fade-up" data-aos-duration="500"
+                        data-aos-delay="400"><i data-lucide="cpu" class="w-8 h-8 text-primary shrink-0"></i>
+                        <div>
+                            <h3 class="font-bold">Lab Komputer & Bahasa</h3>
+                            <p class="text-sm text-gray-500">Komputer multimedia, software pembelajaran interaktif,
+                                laboratorium bahasa.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 bg-white p-5 rounded-xl shadow-sm" data-aos="fade-up" data-aos-duration="500"
+                        data-aos-delay="500"><i data-lucide="activity" class="w-8 h-8 text-primary shrink-0"></i>
+                        <div>
+                            <h3 class="font-bold">Fasilitas Olahraga</h3>
+                            <p class="text-sm text-gray-500">Lapangan futsal, basket, bulu tangkis, sport center.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tenaga Pendidik & Asatidz -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800" data-aos="fade-up" data-aos-duration="800">
+                    Pengajar & Musyrif Profesional</h2>
+                <div class="h-1 w-24 bg-primary mx-auto mt-4 rounded-full mb-8"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-12" data-aos="fade-up" data-aos-duration="800"
+                    data-aos-delay="100">Tim guru dan ustadz bersertifikat, berpengalaman, serta
+                    berdedikasi dalam membimbing santri secara akademik dan spiritual.</p>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div data-aos="flip-left" data-aos-duration="600" data-aos-delay="0">
+                        <div
+                            class="w-32 h-32 bg-gray-200 rounded-full mx-auto flex items-center justify-center text-4xl font-bold text-primary">
+                            Ust</div>
+                        <h3 class="font-bold mt-4">Ust. Seno Dwi Haryono S.Si GR</h3>
+                        <p class="text-sm text-gray-500">Kepala sekolah</p>
+                    </div>
+                    <div data-aos="flip-left" data-aos-duration="600" data-aos-delay="100">
+                        <div
+                            class="w-32 h-32 bg-gray-200 rounded-full mx-auto flex items-center justify-center text-4xl font-bold text-primary">
+                            Bu</div>
+                        <h3 class="font-bold mt-4">Ust. Riko Ardian S.pd</h3>
+                        <p class="text-sm text-gray-500">Kepala Kesiswaan</p>
+                    </div>
+                    <div data-aos="flip-left" data-aos-duration="600" data-aos-delay="200">
+                        <div
+                            class="w-32 h-32 bg-gray-200 rounded-full mx-auto flex items-center justify-center text-4xl font-bold text-primary">
+                            Ust</div>
+                        <h3 class="font-bold mt-4">Ustdh. Ajeng</h3>
+                        <p class="text-sm text-gray-500">Administrasi</p>
+                    </div>
+                    <div data-aos="flip-left" data-aos-duration="600" data-aos-delay="300">
+                        <div
+                            class="w-32 h-32 bg-gray-200 rounded-full mx-auto flex items-center justify-center text-4xl font-bold text-primary">
+                            Ms</div>
+                        <h3 class="font-bold mt-4">Ustzh. Ningsih Tri Rahayu</h3>
+                        <p class="text-sm text-gray-500">Humas</p>
+                    </div>
+                </div>
+                <div class="mt-10 text-sm text-gray-500" data-aos="fade-up" data-aos-duration="500"
+                    data-aos-delay="100">+20 lebih tenaga pendidik dan musyrif lainnya yang ahli di bidangnya.
+                </div>
+            </div>
+        </section>
+
+        <!-- Prestasi & Pencapaian -->
+        <section class="py-20 bg-gradient-to-br from-primary to-sky-800 text-white">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8">
+                <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="text-3xl md:text-4xl font-bold">Prestasi & Pencapaian</h2>
+                    <div class="h-1 w-24 bg-accent mx-auto mt-4 rounded-full"></div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center" data-aos="zoom-in"
+                        data-aos-duration="600" data-aos-delay="0"><i data-lucide="trophy"
+                            class="w-12 h-12 mx-auto mb-3 text-accent"></i>
+                        <p class="text-3xl font-bold">35+</p>
+                        <p>Medali Olimpiade Sains (Kab/Prov)</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center" data-aos="zoom-in"
+                        data-aos-duration="600" data-aos-delay="100"><i data-lucide="medal"
+                            class="w-12 h-12 mx-auto mb-3 text-accent"></i>
+                        <p class="text-3xl font-bold">20+</p>
+                        <p>Santri Hafidz 30 Juz</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center" data-aos="zoom-in"
+                        data-aos-duration="600" data-aos-delay="200"><i data-lucide="graduation-cap"
+                            class="w-12 h-12 mx-auto mb-3 text-accent"></i>
+                        <p class="text-3xl font-bold">90%</p>
+                        <p>Lulusan diterima di PTN</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kerjasama & Jaringan -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800" data-aos="fade-up" data-aos-duration="800">
+                    Mitra & Jaringan</h2>
+                <div class="h-1 w-24 bg-primary mx-auto mt-4 rounded-full mb-10"></div>
+                <div class="flex flex-wrap justify-center gap-8 items-center opacity-80" data-aos="fade-up"
+                    data-aos-duration="800" data-aos-delay="100">
+                    <span class="text-gray-700 font-semibold text-xl">Cambridge Educational Partner</span>
+                    <span class="text-gray-700 font-semibold text-xl">Universitas Gadjah Mada</span>
+                    <span class="text-gray-700 font-semibold text-xl">SMAPTQ ABI UMMI</span>
+                    <span class="text-gray-700 font-semibold text-xl">YAYASAN ABI UMMI</span>
+                </div>
+                <p class="mt-8 text-gray-500" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Kerjasama
+                    dalam pengembangan kurikulum, magang guru, dan beasiswa santri
+                    berprestasi.</p>
+            </div>
+        </section>
+
+        <!-- Call to Action PPDB -->
+        <section class="py-16 bg-gray-900 text-white" data-aos="fade-up" data-aos-duration="800">
+            <div class="max-w-4xl mx-auto px-5 text-center">
+                <i data-lucide="users" class="w-12 h-12 text-accent mx-auto mb-4" data-aos="zoom-in"
+                    data-aos-duration="600"></i>
+                <h2 class="text-2xl md:text-3xl font-bold" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="100">Bergabung Menjadi Santri SMATQ ABI UMMI</h2>
+                <p class="mt-3 text-gray-300" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Daftar
+                    sekarang untuk tahun ajaran 2026/2027. Kuota terbatas!</p>
+                <div class="flex flex-wrap justify-center gap-4 mt-8" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="300">
+                    <a href="ppdb.html"
+                        class="bg-accent hover:bg-accent/90 text-gray-900 font-bold px-8 py-3 rounded-full transition shadow-lg">Formulir
+                        Pendaftaran</a>
+                    <a href="https://wa.me/6285640054840" target="_blank"
+                        class="border border-white hover:bg-white/10 px-8 py-3 rounded-full transition">Tanya via
+                        WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 text-gray-400 py-12" data-aos="fade-up" data-aos-duration="600">
+        <div class="max-w-7xl mx-auto px-5 text-center">
+            <div class="flex justify-center gap-6 flex-wrap mb-6">
+                <a href="index.html" class="hover:text-white">Beranda</a>
+                <a href="tentang.html" class="hover:text-white">Tentang Kami</a>
+                <a href="ppdb.html" class="hover:text-white">Pendaftaran</a>
+                <a href="kontak.html" class="hover:text-white">Kontak</a>
+            </div>
+            <p>© 2025 SMATQ ABI UMMI Islamic Boarding School · Dari Ampel untuk Dunia</p>
+            <p class="text-xs mt-2">Ampel, Boyolali, Jawa Tengah | +62 856-4005-4840</p>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Inisialisasi AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+        });
+
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobBtn = document.getElementById('mobileMenuBtn');
+        const mobMenu = document.getElementById('mobileMenu');
+        if (mobBtn) mobBtn.onclick = () => mobMenu.classList.toggle('hidden');
+    </script>
+</body>
+
+</html>
